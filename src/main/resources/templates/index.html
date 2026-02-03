@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Trang chủ</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="container text-center mt-5">
+            <div class="p-5 mb-4 bg-light rounded-3 shadow-sm">
+                <h1 class="display-4 fw-bold text-primary">Chào mừng bạn đến với Trang Quản lý sách</h1>
+                <hr class="my-4">
+                <a class="btn btn-primary btn-lg" th:href="@{/books}">Truy cập Danh sách sách</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
